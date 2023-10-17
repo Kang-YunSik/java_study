@@ -7,7 +7,7 @@ public class Product<K,M> {
     private K kind;
     private M model;
 
-    //메소드 선언
+    //Getter, Setter 메소드 선언
     //메소드의 리턴 값과 매개변수 값의 타입을 타입 파라미터로 사용
     public K getKind() {
         return this.kind;

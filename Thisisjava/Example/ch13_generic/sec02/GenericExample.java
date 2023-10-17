@@ -3,8 +3,8 @@ package com.mystudy.scanner.Thisisjava.Example.ch13_generic.sec02;
 public class GenericExample {
     public static void main(String[] args) {
 
-        // Car Tv 정보
-        // K는 Tv로 대체, M은 String으로 대체
+        // Tv product1 정보
+        // K는 Tv(클래스)로 대체, M은 String으로 대체
         Product<Tv, String> product1 = new Product();
 
         //Setter의 매개값은 반드시 Tv와 String을 제공
@@ -16,13 +16,12 @@ public class GenericExample {
         String tvModel = product1.getModel();
 
         //-----------------------------------------------------------------
-        // Car Product 정보
+        // Car Product2 정보
+        // K는 Car(클래스)로 대체, M은 String으로 대체
         Product<Car, String> product2 = new Product();
-
 
         product2.setKind(new Car());
         product2.setModel("SUV자동차");
-
 
         Car car = product2.getKind();
         String carModel = product2.getModel();
